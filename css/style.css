@@ -254,6 +254,7 @@ a:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
+
 }
 
 .posts-con article {
@@ -276,7 +277,16 @@ a:hover {
 	border-radius: 6px;
 	width: 153px;
 	height: 153px;
+	transition: 1s;
 }
+.slider-con .slide li img:hover{
+	border-radius: 50px;
+	width: 153px;
+	height: 153px;
+	transform: scale(1.1);
+}
+
+
 
 .slider-con .bx-pager {
 	text-align: center;
