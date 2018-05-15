@@ -1,22 +1,23 @@
+
 $(document).ready(function() {
 	$('.bxslider').bxSlider();
-	
+
 	$(".menu-trigger").click(function() {
 		$("#menu").fadeToggle(300);
 		$(this).toggleClass("active")
 	});
-	
+
 	$('.info-request, .get-contact').fancybox();
-	
-	$("select").crfs(); 
-	
-	
-	$(".table td").mouseenter(function(){    
+
+	$("select").crfs();
+
+
+	$(".table td").mouseenter(function(){
         $(this).find(".holder").stop(true, true).fadeIn(600);
         $(this).find(">div").addClass('hover');
         return false;
      });
-      $('.table td').mouseleave(function(){  
+      $('.table td').mouseleave(function(){
         $(this).find(".holder").stop(true, true).fadeOut(400);
         $(this).find(">div").removeClass('hover');
         return false;
@@ -26,7 +27,7 @@ $(document).ready(function() {
         $(this).parent().parent().removeClass('hover');
         return false;
 	});
-	
+
 	var isBrowserOs = {
 	    Windows: function() {
 	        return navigator.userAgent.match(/Win/i);
@@ -71,7 +72,7 @@ $(document).ready(function() {
 	        return (Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0);
 	    }
 	};
-	 
+
 	var html_class = '';
 	//OS
 	if(isBrowserOs.Windows())
@@ -88,7 +89,7 @@ $(document).ready(function() {
 		html_class = 'android';
 	if(isBrowserOs.BlackBerry())
 		html_class = 'blackberry';
-	 
+
 	//Browser
 	if(isBrowserOs.Chrome())
 		html_class = html_class + ' chrome';
@@ -104,8 +105,8 @@ $(document).ready(function() {
 		html_class = html_class + ' camino';
 	if(isBrowserOs.Safari())
 		html_class = html_class + ' safari';
-	 
+
 	$("html").addClass(html_class);
-	 
+
 });
 
