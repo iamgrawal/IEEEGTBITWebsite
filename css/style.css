@@ -754,13 +754,13 @@ h1.single {
 }
 
 .slider .bxslider li {
-    background: url(../images/pic_slide.jpg) no-repeat 50% 50%;
+    background: url(../images/banner.jpg) no-repeat 50% 50%;
     background-size: cover;
     height: 600px;
 }
 
 .slider .info {
-    float: right;
+    float: left;
     padding: 122px 15px 0 0;
 }
 
@@ -1751,7 +1751,7 @@ a.btn.blue,
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     #logo {
-        background-image: url(../images/logo@2x.png);
+        background-image: url(../images/logo.png);
         background-size: 121px 134px;
     }
     .slider .info a {
@@ -2020,7 +2020,7 @@ a.btn.blue,
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
         #logo {
-            background-image: url(../images/logo@2x.png);
+            background-image: url(../images/logo.png);
             background-size: 90px 100px;
         }
     }
